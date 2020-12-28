@@ -28,5 +28,16 @@ Nolemt kādā veidā vēlaties veikt izstrādi un projekta darbināšanu:
 - atvērt lapu [repl.it](repl.it)
 - nospiest pogu "New Repl"
 - izvēlēties iespēju "Import from GitHub"
-- ielīmēt sava repozitorija URL
+- ielīmēt **sava** repozitorija URL
 - nospiest pogu "Import from GitHub"
+- pārbaudīt iespējas:
+  - kodu labot pārlūkprogrammā
+  - serveri iedarbināt ar zaļo pogu "Run" lapas augšpusē - vidū
+  - savu aplikāciju atvērt jaunā pārlūkprogrammas cilnī ar pogu "Open in new tab"
+
+## 3. Pievienot serverim jaunu founcionalitāti
+
+- izveidot route "/sveiki", kas atgriež tekstu "Nav vairs nekāds rīts!"
+- izveidot route "/cik/2/2", kas aprēķina un atgriež summu 2+2. Ievērot, ka jāatgriež ir *string* datu tips!
+- izveidot route "/sveiki/<vards>", kas izmanto mainīgo `vards`, lai atgrieztu personalizētu sveicienu, piemēram, ja `vards` ir *Māris*, tad atgriež tekstu "Sveiki, Māris!"
+- izveidot route "/cik/<sk1>/<sk2>, kas izmanto mainīgos sk1 un sk2, lai aprēķinātu un atgrieztu to summu. Ievērot, ka mainīgais tiek iegūts kā *string* datu tips, bet aprēķiniem nepieciešams *int* vai *float*, savukārt jāatgriež ir *string* datu tips!
