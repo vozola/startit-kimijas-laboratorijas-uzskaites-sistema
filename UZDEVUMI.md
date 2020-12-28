@@ -38,6 +38,6 @@ Nolemt kādā veidā vēlaties veikt izstrādi un projekta darbināšanu:
 ## 3. Pievienot serverim jaunu funcionalitāti
 
 - izveidot route "/sveiki", kas atgriež tekstu "Nav vairs nekāds rīts!"
-- izveidot route "/cik/2/2", kas aprēķina un atgriež summu 2+2. Ievērot, ka jāatgriež ir *string* datu tips!
 - izveidot route "/sveiki/&lt;vards&gt;", kas izmanto mainīgo `vards`, lai atgrieztu personalizētu sveicienu, piemēram, ja `vards` ir *Māris*, tad atgriež tekstu "Sveiki, Māris!"
+- izveidot route "/cik2/&lt;reizinamais&gt;", kas izmanto mainīgo `reizinamais` un aprēķina un atgriež dotā skaitļa reizinājumu ar 2. Ievērot, ka jāatgriež ir *string* datu tips!
 - izveidot route "/cik/&lt;sk1&gt;/&lt;sk2&gt; kas izmanto mainīgos sk1 un sk2, lai aprēķinātu un atgrieztu to summu. Ievērot, ka mainīgais tiek iegūts kā *string* datu tips, bet aprēķiniem nepieciešams *int* vai *float*, savukārt jāatgriež ir *string* datu tips!
