@@ -1,18 +1,22 @@
 # Ķīmijas laboratorijas uzskaites sistēmas API
 
-## 1. Pievienot serverim jaunu funcionalitāti pēc parauga
+## 1. Pievienot serverim statiskas datnes pēc parauga
 
-No sākuma `serveris.py` datnē pieslēdz papildus funkcionalitāti no bibliotēkam (Flask jsonify) un citām datnēm (dati.py):
+Sagatavošanās soļi:
 
-- `import data` - lai pieklūtu paraugdatiem
-- `from Flask import jsonify` - lai pārvērstu dažādus datu tipus par JSON formātu
+- izveido mapi `templates` html datnēm (obligāti šādu nosaukumu, ja negrib nodarboties ar Flask pārkonfigurēšanu!)
+- mapē `static` izveido mapes `static/css` un `static/js` css un js datnēm
+- pievieno jaunu Flask funkcionalitāti: `from Flask import render_template`
+- no sava projekta vai repozitorija *<https://github.com/armandspucs/klus2>* nokopē `index.html` un citas html datnes, un ievieto tās jaunajā mapē `templates`
+- no sava projekta vai repozitorija nokopē css un js datnes un ievieto attiecīgajās `static` mapēs.
 
-Uzdevumi:
+Servera programmēšana:
 
-- izveidot route `/api/v1/vielas`, kas atgriež visus piemēra datus, kas atrodami datnē `dati.py` mainīgajā `vielas`. Ievērot, ka jāatgriež ir *string* datu tips!
-- izveidot route `/api/v1/viela/<vielasID>`, kas atgriež datus par vielu ar ID &lt;vielasID&gt;, kas atrodami datnē `dati.py` mainīgajā `vielas`. Ievērot, ka jāatgriež ir *string* datu tips!
+- nomaina route `/` funkciju, lai tā atgrieztu `index.html` template.
+- izveido route `/publiski`, kas atgriež `pub_data.html` template.
+- novēro, ka nestrādā css. html datnēs `index.html` un `pub_data.html` salabo linkus uz statiskajām datnēm (css, js, images), priekšā pieliekot `/static/`.
+- salabo linkus starp index un publiski lapām
 
 ## 2. Patstāvīgs darbs
 
-- izveidot route `/api/v1/inventars`, kas atgriež visus piemēra datus, kas atrodami datnē `dati.py` mainīgajā `inventars`.
-- izveidot route `/api/v1/inventars/<inventarssD>`, kas atgriež datus par vielu ar ID &lt;inventarsID&gt;, kas atrodami datnē `dati.py` mainīgajā `inventars`.
+- izveido route `/pieslegties`, kas atgriež `login.html` template, salabo linkus uz css un js un linkus no citiem template.
