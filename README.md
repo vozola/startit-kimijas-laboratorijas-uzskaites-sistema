@@ -15,7 +15,6 @@ Projekts ir sadalīts vairākos loģiskos posmos:
 - katrs no posmiem ir atsevišķā git zarā, kas ir secīgi numurēti
 - katrs no posmiem satur uzdevumu aprakstu UZDEVUMI.md datnē un nepieciešamības gadījumā, papildus komentārus koda datnēs
 - katrs no posmiem satur iepriekšējā posma uzdevumu atrisinājumu piemērus
-- datnē docs/VISI_UZDEVUMI.md ir visi uzdevumu apraksti
 
 ### Projekta darbināšana
 

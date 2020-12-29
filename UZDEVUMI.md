@@ -20,12 +20,12 @@ Nolemt kādā veidā vēlaties veikt izstrādi un projekta darbināšanu:
 - veikt "clone" no **sava** GitHub projekta
 - atvērt projekta mapi koda redaktorā/IDE
 - strādāt pie projekta, saglabāt datnes
-- palaist serveri, izmantojot koda redakrota/IDE "run" funkcionalitāti uz datnes "serveris.py" vai no komandrindas (Git Bash) izpildot `python serveris.py`
+- palaist serveri, izmantojot koda redaktora/IDE "run" funkcionalitāti uz datnes "serveris.py" vai no komandrindas (Git Bash) izpildot `python serveris.py`
 - pārbaudīt darbību atverot norādīto adresi pārlūkprogrammā
 
 ### 2B. repl.it vidē
 
-- atvērt lapu [repl.it](repl.it)
+- atvērt lapu [repl.it](https://repl.it)
 - nospiest pogu "New Repl"
 - izvēlēties iespēju "Import from GitHub"
 - ielīmēt **sava** repozitorija URL
